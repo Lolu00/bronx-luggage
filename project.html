@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRONZ Luggage - Premium Travel Essentials</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="bronz.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-suitcase me-2"></i>BRONZ
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Collections
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#holiday">Holiday Collection</a></li>
+                            <li><a class="dropdown-item" href="#business">Business Collection</a></li>
+                            <li><a class="dropdown-item" href="#casual">Casual Collection</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center">
+                    <a href="#search" class="text-white me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#cart" class="text-white me-3">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge bg-primary ms-1" id="cartCount">0</span>
+                    </a>
+                    <button class="btn btn-outline-light">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold text-white mb-4">
+                        Holiday Collection
+                    </h1>
+                    <p class="lead text-white-50 mb-4">
+                        Discover a special edit designed for celebration. Premium luggage crafted for the modern traveler.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#products" class="btn btn-primary btn-lg">
+                            <i class="fas fa-shopping-bag me-2"></i>Shop Now
+                        </a>
+                        <a href="#about" class="btn btn-outline-light btn-lg">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=600&fit=crop"
+                         alt="Premium Luggage" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 mb-4">
+                    <div class="category-card p-4 rounded shadow-sm bg-white">
+                        <i class="fas fa-female fa-3x text-primary mb-3"></i>
+                        <h3 class="h4 mb-3">FOR HER</h3>
+                        <p class="text-muted">Elegant and stylish luggage designed for the modern woman</p>
+                        <a href="#womens-collection" class="btn btn-outline-primary">Explore Collection</a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="category-card p-4 rounded shadow-sm bg-white">
+                        <i class="fas fa-male fa-3x text-primary mb-3"></i>
+                        <h3 class="h4 mb-3">FOR HIM</h3>
+                        <p class="text-muted">Sophisticated luggage crafted for the discerning gentleman</p>
+                        <a href="#mens-collection" class="btn btn-outline-primary">Explore Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Featured Products</h2>
+                    <p class="lead text-muted">Discover our most popular luggage collections</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&h=300&fit=crop"
+                             class="card-img-top" alt="Luxury Suitcase">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Luxury Carry-On</h5>
+                            <p class="card-text text-muted">Premium leather suitcase perfect for business travel</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="h5 text-primary mb-0">$299</span>
+                                    <div class="rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart" data-product="Luxury Carry-On" data-price="299">
+                                    <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop"
+                             class="card-img-top" alt="Travel Backpack">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Travel Backpack</h5>
+                            <p class="card-text text-muted">Versatile backpack for weekend getaways</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="h5 text-primary mb-0">$149</span>
+                                    <div class="rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart" data-product="Travel Backpack" data-price="149">
+                                    <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop"
+                             class="card-img-top" alt="Designer Luggage Set">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Designer Set</h5>
+                            <p class="card-text text-muted">Complete luggage set for the sophisticated traveler</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="h5 text-primary mb-0">$599</span>
+                                    <div class="rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star-half-alt text-warning"></i>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart" data-product="Designer Set" data-price="599">
+                                    <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400&h=300&fit=crop"
+                             class="card-img-top" alt="Compact Duffle">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Compact Duffle</h5>
+                            <p class="card-text text-muted">Perfect for gym sessions and short trips</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="h5 text-primary mb-0">$89</span>
+                                    <div class="rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart" data-product="Compact Duffle" data-price="89">
+                                    <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">About BRONZ</h2>
+                    <p class="lead mb-4">
+                        For over a decade, BRONZ has been crafting premium luggage that combines style, durability, and functionality.
+                        Our commitment to quality and innovation has made us a trusted companion for travelers worldwide.
+                    </p>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                                <h5>Premium Quality</h5>
+                                <p class="text-muted">Crafted with the finest materials</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <i class="fas fa-globe fa-3x text-primary mb-3"></i>
+                                <h5>Global Standards</h5>
+                                <p class="text-muted">Trusted by travelers worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop"
+                         alt="About BRONZ" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Get In Touch</h2>
+                    <p class="lead text-muted">We're here to help you find the perfect luggage</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <form>
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="subject" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg">
+                                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-suitcase me-2"></i>BRONZ
+                    </h5>
+                    <p class="text-light">
+                        Premium luggage crafted for the modern traveler. Quality, style, and functionality in every piece.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="#products" class="text-light text-decoration-none">Products</a></li>
+                        <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Collections</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Holiday Collection</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Business Collection</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Casual Collection</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Limited Edition</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <div class="mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <span class="text-light">123 Travel Street, NY 10001</span>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fas fa-phone me-2"></i>
+                        <span class="text-light">+1 (555) 123-4567</span>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        <span class="text-light">info@bronz.com</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-light">&copy; 2024 BRONZ Luggage. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body p-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control form-control-lg" placeholder="Search products...">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        // Shopping cart functionality
+        let cart = [];
+        let cartCount = 0;
+
+        // Add to cart functionality
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const product = this.getAttribute('data-product');
+                const price = parseFloat(this.getAttribute('data-price'));
+
+                cart.push({ product, price });
+                cartCount++;
+                document.getElementById('cartCount').textContent = cartCount;
+
+                // Show success message
+                showToast(`${product} added to cart!`);
+            });
+        });
+
+        // Toast notification function
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.className = 'toast position-fixed top-0 end-0 m-3';
+            toast.setAttribute('role', 'alert');
+            toast.innerHTML = `
+                <div class="toast-header">
+                    <i class="fas fa-shopping-cart text-success me-2"></i>
+                    <strong class="me-auto">Cart Updated</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                </div>
+                <div class="toast-body">
+                    ${message}
+                </div>
+            `;
+
+            document.body.appendChild(toast);
+            const bsToast = new bootstrap.Toast(toast);
+            bsToast.show();
+
+            toast.addEventListener('hidden.bs.toast', () => {
+                document.body.removeChild(toast);
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
